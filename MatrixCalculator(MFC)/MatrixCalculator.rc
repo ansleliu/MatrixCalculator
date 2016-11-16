@@ -1,0 +1,288 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\MatrixCalculator.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "MatrixCalculator.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 224, 67
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 MatrixCalculator"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,7,7,21,21,SS_REALSIZEIMAGE
+    LTEXT           "MatrixCalculator 1.0 版",IDC_STATIC,45,7,119,8,
+                    SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2011",IDC_STATIC,42,52,119,8
+    DEFPUSHBUTTON   "确定",IDOK,167,7,50,14,WS_GROUP
+    LTEXT           "西安电子科技大学 ",IDC_STATIC,44,17,117,8
+    LTEXT           "通信工程学院",IDC_STATIC,43,29,71,10
+    LTEXT           "刘慧军",IDC_STATIC,43,41,62,8
+END
+
+IDD_MATRIXCALCULATOR_DIALOG DIALOGEX 0, 0, 433, 283
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "MatrixCalculator"
+MENU IDR_MENU1
+FONT 9, "宋体"
+BEGIN
+    PUSHBUTTON      "输入主辅矩阵",IDC_BUTTON12,352,17,73,14
+    PUSHBUTTON      "矩阵加法",IDC_BUTTON1,351,38,74,14
+    PUSHBUTTON      "矩阵减法",IDC_BUTTON2,352,59,73,14
+    PUSHBUTTON      "矩阵乘法",IDC_BUTTON3,351,81,74,14
+    PUSHBUTTON      "矩阵数乘",IDC_BUTTON4,352,104,73,14
+    PUSHBUTTON      "矩阵转置",IDC_BUTTON5,353,125,72,14
+    PUSHBUTTON      "矩阵幂运算",IDC_BUTTON7,354,148,71,14
+    PUSHBUTTON      "矩阵求逆",IDC_BUTTON6,354,172,71,14
+    PUSHBUTTON      "求代数余子式",IDC_BUTTON13,353,196,72,14
+    PUSHBUTTON      "求行列式值",IDC_BUTTON9,350,217,75,14
+    PUSHBUTTON      "初等行变换求秩",IDC_BUTTON10,351,238,74,14
+    PUSHBUTTON      "特征值特征向量",IDC_BUTTON11,352,262,73,14
+    EDITTEXT        IDC_EDIT1,7,17,121,130,ES_MULTILINE | ES_WANTRETURN | 
+                    WS_VSCROLL | WS_HSCROLL
+    EDITTEXT        IDC_EDIT3,7,163,120,113,ES_MULTILINE | ES_WANTRETURN | 
+                    WS_VSCROLL | WS_HSCROLL
+    EDITTEXT        IDC_EDIT2,136,17,209,259,ES_MULTILINE | ES_WANTRETURN | 
+                    ES_NUMBER | WS_VSCROLL | WS_HSCROLL
+    LTEXT           "主操作矩阵输入窗口",IDC_STATIC,7,6,114,8
+    LTEXT           "辅助运算矩阵和相关量输入窗口",IDC_STATIC,7,150,119,11
+    LTEXT           "输出窗口",IDC_STATIC,135,6,96,9
+END
+
+IDD_HELPDIALOG DIALOG DISCARDABLE  0, 0, 137, 192
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "帮助"
+FONT 12, "微软雅黑"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,90,7,40,11
+    LTEXT           "一.使用说明：",IDC_STATIC,7,7,79,11
+    LTEXT           "1.点击输入按钮输入或者不点击直接输入；",IDC_STATIC,7,19,
+                    123,8
+    LTEXT           "2.输入时，以空格分隔数字，以回车换行；",IDC_STATIC,7,28,
+                    123,8
+    LTEXT           "2.在选择操作之前最好不要在辅助输入窗口输入数据，以免出错；",
+                    IDC_STATIC,7,37,123,17
+    LTEXT           "3.选择您想要进行的运算，点击其对应的按钮，并按提示进行操作；",
+                    IDC_STATIC,7,53,123,18
+    LTEXT           "二.注意:",IDC_STATIC,7,74,123,8
+    LTEXT           "1.输入矩阵时，漏输数据而未达到预想维数时，缺失数据将为您自动补零；",
+                    IDC_STATIC,7,86,123,17
+    LTEXT           "2.进行矩阵数乘运算时，辅助运算数据输入窗口最好输入一个数，如果您输入了多个数，系统为您选取第一个数；",
+                    IDC_STATIC,7,103,123,25
+    LTEXT           "3.进行矩阵求幂运算时，辅助运算数据输入窗口最好输入一个数，如果您输入了多个数，系统为您选取第一个数；",
+                    IDC_STATIC,7,128,123,25
+    LTEXT           "4.求代数余子式时，辅助运算数据输入窗口最好输入两个整数，如果您输入了多个数，系统将为您选取前两个，如果您输入的是浮点数，对不起，不按规则进行，后果自负；",
+                    IDC_STATIC,7,152,123,33
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "MatrixCalculator Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "MatrixCalculator\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2011\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "MatrixCalculator.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "MatrixCalculator 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 217
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 60
+    END
+
+    IDD_MATRIXCALCULATOR_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 425
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 276
+    END
+
+    IDD_HELPDIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 130
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 186
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU DISCARDABLE 
+BEGIN
+    MENUITEM "关于MatrixCalculator(&A)",    ID_VIEW_ABOUTBOX
+    MENUITEM "查看使用帮助(&H)",            ID_VIEW_HELP
+    MENUITEM "版本信息(&V)",                ID_MENUITEM32779
+    MENUITEM "",                            ID_MENUITEM32777, GRAYED
+    MENUITEM "",                            ID_MENUITEM32775
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 MatrixCalculator(&A)..."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_HELP            "show help of application \n help"
+    ID_VIEW_ABOUTBOX        "show aboutbox of application \n aboutbox"
+    ID_VIEW_VERSION         "show version of application \n version"
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\MatrixCalculator.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
