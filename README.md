@@ -1,2 +1,2 @@
 # MatrixCalculator
-MatrixCalculator(MFC&amp;Dos)
+Simple Matrix Calculator to do some linear algebra computations
